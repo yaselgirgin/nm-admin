@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Input Groups</title>
+  <base href="#"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <link href="./images/favicon.ico" rel="icon" type="image/x-icon" >
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+      
+      <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div>
+  <label for="price" class="block text-sm font-medium leading-6 text-gray-900">Price</label>
+  <div class="relative mt-2 rounded-md shadow-sm">
+    <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+      <span class="text-gray-500 sm:text-sm">$</span>
+    </div>
+    <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0.00">
+    <div class="absolute inset-y-0 right-0 flex items-center">
+      <label for="currency" class="sr-only">Currency</label>
+      <select id="currency" name="currency" class="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm">
+        <option>USD</option>
+        <option>CAD</option>
+        <option>EUR</option>
+      </select>
+    </div>
+  </div>
+</div>
+        
+    
+    </div>
+  </main>
+
+</body>
+</html>
